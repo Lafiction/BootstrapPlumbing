@@ -33,7 +33,6 @@ li {
 .section-padding {
   padding: 50px 0;
   position: relative;
-  float: left;
   width: 100%;
   overflow-x: hidden;
 }
@@ -212,6 +211,9 @@ header .mainmenu-area .navbar ul li a:hover {
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
 }
+header .mainmenu-area .navbar ul li:nth-child(5):hover a {
+  background-color: #333;
+}
 .dropdown-menu {
   display: block;
   min-width: 235px;
@@ -385,34 +387,34 @@ header .header-search form i {
 */
 
 .top-section {
-padding: 7%;
-float: left;
-width: 100%;
-margin-top: -1px;
-background-color: rgba(0, 0, 0, 0.6);
+  padding: 7%;
+  float: left;
+  width: 100%;
+  margin-top: -1px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .top-section form {
-background-color: rgba(0, 0, 0, 0.4); 
-color: #fff;
-padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4); 
+  color: #fff;
+  padding: 20px;
 }
 .top-section form input {
-margin-bottom: 20px;
-padding: 0 10px;
+  margin-bottom: 20px;
+  padding: 0 10px;
 }
 .top-section form p {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .top-section form input[type="name"],
 .top-section form input[type="phone"] {
-width: 49.5%;
+  width: 49.5%;
 }
 .top-section form input[type="email"],
-.top-section form input[type="textarea"] {
-width: 100%;
+.top-section form textarea {
+  width: 100%;
 }
-.top-section form input[type="textarea"] {
-height: 100px;
+.top-section form textarea {
+  height: 100px;
 }
 .btn-submit {
   color: #fff;
@@ -561,4 +563,22 @@ height: 100px;
   header .mainmenu-area {
     display: none;
   }
+  header .top-area .social ul li a i {
+    width: 30px;
+  }
+  header .top-area .social ul li, header .top-area .social ul li:first-child {
+    border: none;
+  }
+  header .logo-area .logo, header .logo-area .header-info-box {
+    text-align: center;
+  }
+  header .logo-area .header-info-box {
+    float: none;
+    margin: 20px 0;
+  }
+  .top-section form input[type="name"], 
+  .top-section form input[type="phone"] {
+    width: 100%;
+  }
 }
+
